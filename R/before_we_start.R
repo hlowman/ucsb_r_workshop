@@ -81,9 +81,9 @@
 
 # The most important thing to be familiar with here is the PACKAGES pane. R and RStudio come with some basic capabilities (usually referred to as base R), but everything else nice and fancy comes in a different package. In order to use what's in the package, we'll need to "attach" it. 
 
-# Ana will go over this in the next lesson, but for now, you can think of this packages tab as your library. You'll need to take a book (or a package) off the shelf in order to read it, but they'll always be there for you to access.
+# Ana will go over this in the next lesson, but for now, you can think of this packages tab as your library. You'll need to take a book (or a package) off the shelf in order to read it, but they'll always be there for you to access. To "read" one of the packages, you simply need to click the checkbox next to a package to attach it. Then, you're good to go!
 
-# Continuing counter-clockwise, you will find the **Environment** pane. This is where all of your datasets and variables will be stored. The remaining tabs - History, Connections, etc. - will not be as important for today's lesson, so don't worry too much about them.
+# Continuing counter-clockwise, you will find the **Environment** pane. This is where all of your datasets and variables will be stored. For example, let's say we assign a value of 4 to a variable named "cat". Type, `cat <- 4` in the Console and hit Enter - it should now appear in your Environment. The remaining tabs - History, Connections, etc. - will not be as important for today's lesson, so don't worry too much about them.
 
 # Finally, we have the **Source** pane. Let's go ahead and open up a new R script (File > New File > R Script).
 
@@ -95,7 +95,9 @@
 
 #### PAUSE ####
 
-# Would anyone like some additional clarification on the different parts of RStudio?
+# Would anyone like any additional clarification on the different parts of RStudio?
+
+# TO REVIEW: The console is where R is running, the packages pane allows you to access additional functions, the environment pane tells you what R has stored, and the source or script is where you will be typing for the remainder of the workshop.
 
 
 # Package Installation ----------------------------------------------------
@@ -113,6 +115,3 @@
 # If you didn't, you may head out for your break. We'll see you in 15 minutes!
 
 # End of script.
-
-
-
