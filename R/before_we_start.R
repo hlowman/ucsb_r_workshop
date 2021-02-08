@@ -102,15 +102,24 @@
 
 # Package Installation ----------------------------------------------------
 
-# Before we take a break, we're going to install a few packages (add a few books to our library) to prepare for our next lesson.
+# Before we take a break, we're going to make a few customizations to our RStudio and install a few packages (add a few books to our library) to prepare for our next lesson.
 
-# Type in the console.
+# First, navigate to your RStudio > Preferences.
+# Under the General tab, find your Workspace section.
+# Where it says "Restore .RData into workspace at setup." - make sure this is NOT checked and that the dropdown menu underneath reads as "Never".
+# This makes sure you start with a blank slate each time.
+
+# Next, navigate to the Appearance tab, and here you can customize the appearance and colors of your code.
+# My personal favorites include using "Dracula" and "Pastel on Dark", since they're a bit easier on the eyes.
+# Once you've made your selection, scroll to the bottom of the window and click "Apply".
+
+# Then, type the following in the Console:
 
 # install.packages("tidyverse")
 # install.packages("here")
 # install.packages("palmerpenguins")
 
-# If you got an error, please reach out to one of us for help.
+# If you got an error, please reach out to one of the instructors and helpers for help.
 
 # If you didn't, you may head out for your break. We'll see you in 15 minutes!
 
