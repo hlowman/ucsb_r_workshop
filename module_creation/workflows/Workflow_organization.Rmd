@@ -1,0 +1,236 @@
+---
+title: "Human-friendly RStudio workflows"
+author: "Ana Miller-ter Kuile"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: readable
+    toc: true
+    toc_depth: 2
+    toc_float: 
+      collapsed: false
+---
+
+<style type="text/css">
+  body{
+  font-size: 13pt;
+}
+</style>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+library(here)
+```
+
+
+## Learning Goals
+
+1. How to organize data, code, and other files into folders to keep track of multiple projects at once.
+
+2. How to make an R project within your folders to help this organization transfer to RStudio.
+
+3. How to use the here package to create code that can be run by anyone, anywhere.
+
+
+```{r, echo = FALSE}
+knitr::include_graphics(here("module_creation", "workflows", "images", "cracked_setwd.png"))
+```
+
+[<3 Allison Horst](https://github.com/allisonhorst/stats-illustrations)
+
+## 1. Folder organization
+
+As you continue to do research, you may start to work on multiple projects with multiple people - either those you are leading or those you are helping others with. Some of these projects may involve coding and keeping track of multiple datasets or code for multiple analyses. Having a clear and consistent organization strategy will save you time now and later and will make you a better collaborator. (and that includes collaborating with future YOU!)
+
+There are multiple ways to organize data, code, and all the other files associated with a project, but I'm going to start with the example of this workshop, in which we have been working on multiple R scripts as well as a dataset. 
+
+### Subfolders for code and data
+
+It's a good idea to set up your project folders before you even start a research project, just so everything has a home once you get your datasets in order. I like to organize each of my research projects into a folder with some name for that project, and then create separate subfolders for the parts of this project, which can include `raw_data` `data`, `R`, and `documents`. These subfolders, any folders inside of them, or additional subfolders depend on the project. 
+
+There are lots of reasons to distinguish `data` and `raw_data`, but I primarily create these two folders so that I know never to alter the raw data down the line with anything I change in the dataset (e.g. taking a summary statistic). Ideally, I'm changing my data in R only and so anything I've done to change my raw data can be traced back from the very beginning. In this way, my raw data always lives in `raw_data` and any data files that result from me changing the data in any way end up in the `data` folder. 
+
+If you look at the organization of the folder for this workshop, you can see we have created `data` and `data_raw` folders and have been working in scripts in a folder called `R`. If this was a project for your research, you could probably add folders for `documents`, `figures`, or other parts of a project.
+
+
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "file_folder.png"))
+```
+
+## 2. R Projects
+
+Once you've taken all the time to organize your folders to keep track of your work, RProjects in RStudio let you transfer this organization to your RStudio environment. RProjects let you easily tell RStudio "I'm working in this folder (directory) so please, anything I say, refer to the organization of that folder to find it!"
+
+### The "What" and "Why" of R Projects
+
+From [R Studio support page](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects):
+
+"RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents."
+
+Basically, an R project is an R object that lives within each of your project working directories that lets you easily partition that project's code, data, and outputs from other projects you're working on. 
+
+Whatever directory your R Project is located in becomes your working directory (which you can find within an R Project by typing `getwd()`). This makes it really easy to find data and code in relation to a particular project because your working directory is immediately set as the directory where your R project object is and all your files and folders can be found within that working directory. 
+[Hadley Wickam](https://r4ds.had.co.nz/workflow-projects.html) has a great chapter on R Projects in workflows that goes into more detail.
+
+For me, the most important aspect of an R Project is that it sets my working directory to whatever folder in which I place the R Project, thus eliminating the time I might spend trying to figure out where my code and data live and where they go when I decide to export them from RStudio.
+
+### How to create an R Project in an existing directory.
+
+There are multiple ways to create an R Project, including creating a new directory, putting one in an existing directory, or creating one that allows you to use Git and GitHub. I'm going to go over how to create an R Project in an existing directory since a lot of you already have data and scripts saved somewhere in a directory on your computer. 
+
+For this tutorial, I'm going to be creating an R Project for my `ucsb_r_workshop` directory, which has subdirectories for my code and data. 
+
+The directory looks like this in Finder on my Mac:
+ 
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "file_folder.png"))
+```
+
+I want to make my R Project in the top working directory (not in one of the subdirectories).
+
+First, open RStudio, navigate to the "File" tab and select "New Project..."
+
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "file_newproj.png"))
+```
+
+Then, you will want to select the option in the pop-up to create a project in an existing directory:
+
+```{r, echo = FALSE, out.width = "70%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "existing_dir.png"))
+```
+
+Navigate to your desired working directory
+
+```{r, echo = FALSE, out.width = "70%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "top_dir.png"))
+```
+
+And create your project! 
+
+What did this do for you? Let's find out!
+
+First, let's look in finder at our top directory again:
+
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "project_in_dir.png"))
+```
+
+Now we've got an icon that designates itself as an ".Rproj" object. Close out any RStudio environments you currently have going and click on this .RProj object to open your RStudio inside that R Project. You might notice that your R icon will now display the project you're in.
+
+```{r, echo = FALSE, out.width= '30%',fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "r_project.png"))
+```
+
+Beyond now letting you build your workflow around a nice and organized project that houses all your code and files, now you have a nice Files window in your R Studio in which you can navigate to your scripts and R Markdown files. Or remember what the heck you named something before you import it into your script in a nice user-friendly (non-coding) way that doesn't require switching between Finder and RStudio. 
+
+```{r, echo = FALSE, out.width = "80%", fig.align = 'center'}
+knitr::include_graphics(here("module_creation", "workflows", "images", "files_tab.png"))
+```
+
+
+## 3. here package
+
+Great! Now we've got all our files and folders organized, we have an easy way to transfer that organization to R and RStudio. We're ready to go! Now what happens if I want to share this amazing project I'm working on with someone else? How do I make sure they aren't having to change the code in any way to see what I've done. Enter, the `here` package!
+
+```{r, echo = FALSE}
+knitr::include_graphics(here("module_creation", "workflows", "images", "here_comic.png"))
+```
+
+### The "What" and "Why" of the here package
+
+The [here package](https://github.com/jennybc/here_here) translates computer-friendly paths to import and export files from RStudio into human-friendly lists of folders that work well across any computer. Here are a few reasons you might use the `here` package, even if you might not think it is necessary for you to do so:
+
+1. I (will) send code to collaborators (via GitHub, email, or other formats).
+
+2. I (will) work on my code on more than one computer.
+
+3. I plan to make my code available during or after the publication of my project (whether you plan to or not, open data is becoming a requirement at most journals).
+
+In more detail, the here package both 1. starts off your workflow in whatever directory you are currently in (which will be the one your R project is in!) and 2. allows you to set file paths for imported data in your scripts based on **the directory organization itself** as opposed to the directory organization **specific to your current computer**. It's kind of like taking the computer talk of all the `\` and `/` icons and making it talk like a human. What do I mean by this? Rather than typing in something along the lines of:
+
+`read.csv("C:\Users\Ana\path\that\only\I\have\data.csv")`
+
+which is a file path specific to my computer, you will have something along the lines of 
+
+`read.csv(here("subdirectory_of_RProject", "other_subdirectory_sometimes", "data.csv"))` 
+
+The `here()` function basically tells your computer "Start at the working directory (the top directory, or working directory where your R Project is), and then navigate into sub-directories from there to find my file." So, each consecutive set of words in a `""` indicates a folder or file that lives within another folder, and each `,` is telling you to "look in this subdirectory", "within this subdirectory", "to find this file".
+
+Using the here package and function means that as long as someone else has your working directories, code, and data in the same organization as you do (which they will if they are a collaborator you have sent a project directory to, or someone downloading (cloning) from your GitHub repository, or you opening your project from a different computer, or someone downloading your project directory in the format you've saved it on Dryad after publication), they can now re-run your code as long as they have the `here` package loaded without having to do anything like change 
+
+`read.csv("C:\Users\Ana\path\that\only\I\have\data.csv")`
+
+to
+
+`read.csv("C:\Users\Heili\path\that\only\I\have\data.csv")`
+
+More on the here package on [this website](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+
+### Exploring the here() function
+
+The `here` package relies on the `here()` function to perform its tasks. We can use this function in multiple ways, including to figure out where our current working directory is and, thus, where our file paths to add to the `here()` function should start.
+
+Let's first load the here package with the `library()` function:
+
+```{r}
+library(here)
+```
+
+To figure out where we currently "live" on our computers in terms of our working directory, we can call the `here()` function with nothing (e.g. no arguments) in the parantheses:
+
+```{r}
+here()
+```
+
+This tells us that we're in our top directory, which is `ucsb_r_workshop`. 
+
+Now let's try to import a .csv file into our RStudio environment using the here function with a path indicated in the parentheses. We'll work with the survey dataset from yesterday's "Starting with Data" module. Recall that yesterday we imported this dataset into our RStudio environment with the `read_csv()` function from the `tidyverse` and by defining a file path: 
+
+```{r, eval = FALSE}
+surveys <- read_csv("data_raw/portal_data_joined.csv")
+```
+
+For this dataset, the file path is "subdirectory of the working directory": `data_raw`, "CSV dataset within this subdirectory": `portal_data_joined.csv`. To translate this to the `here()` function, we can just replace any `\` or `/` in a file path with a `,` and encase every subfolder and file name in `""`. In this case, we are going to be using the `here()` function **nested** within the `read_csv()` function: 
+
+```{r}
+surveys_here <- read_csv(here("data_raw", "portal_data_joined.csv"))
+```
+
+This last line of code is saying: to read this .csv, start "here" in my working directory (`ucsb_r_workshop`) and then go into the `data_raw` subdirectory, and find the `portal_data_joined.csv` file and open that to create the `surveys_here` object. Now anyone on any computer can open your code, load the here package, and get rolling without having to change file paths! 
+
+### Challenge
+
+Now it's your turn! Using a dataset you've brought with you to the workshop, try to use the `here()` function nested within the `read_csv()` function to import this dataset into RStudio!
+
+```{r, echo = FALSE}
+knitr::include_graphics(here("module_creation", "workflows",  "images", "neat.png"))
+```
+
+## More organization tips and resources
+
+### How to organize R scripts?
+
+Organization extends beyond the folders and subfolders you create to keep track of projects and also includes the R scripts that you create as part of your research. There are lots of different opinions about the best way to organize R scripts and so I'm not going to give you a prescriptive "this is what to do" here. Instead, I will suggest a few ideas that I've heard from folks who are really amazing data scientists.
+
+The first is to **comment code** really well for your own future sake and also for the sakes of everyone who might want to reproduce your code either while you're working on the project (e.g. collaborators helping with analyses) or after you're done with a project (by downloading off a public data repository like Dryad). 
+
+The second is to think about **script length and content**. There are different opinions on this and they often depend on the complexity of the project. However, I follow a strategy I learned from Alexa Fredston during a [workshop last summer](https://github.com/afredston/collaborations_workflows_lecture) in which she suggested creating short R scripts where **each script does one thing**. 
+
+What I mean by this is - say I have a project where I want to track seed, seedling, and adult tree survival in plots using a set of different statistical methods for each life stage. I would probably create one R script for the seed analysis, one for the seedling analysis, and a final one for the adult tree analysis. That way I'm not scrolling through hundreds and hundreds of lines of (hopefully) well-commented code to find the adult tree statistical model if I want to run it again or tweak it somehow. Thinking about script organization gets more and more complex as you get projects where datasets have to be changed around a lot before analyses - in my own work, I work with a lot of DNA amplicon sequencing data, which I have to normalize, sort by species identity, and then run statistics on. I keep these three steps in three scripts. 
+
+There are lots of cool organizational tricks in RStudio that can also help, including using the Table of Contents feature, which you can find at the top right of the Script panel in RStudio. If you use headings, either by using four "####" after a commented heading or by creating headings by navigating to the "Code" menu and selecting "Insert Section" in RStudio (Mac Shortcut `Ctrl` + `Shift` + `R`, PC Shortcut `Cmd` + `Shift` + `R`).
+
+### GitHub: another reason for RProjects
+
+Keeping projects organized once you've gone through six iterations of your statistical analysis and five drafts of your paper may look to you like saving a bunch of versions of everything (e.g. "Draft_Nov_2_2020" and "Draft_Nov_2_2020_AMtK"... etc.) and you can bet that folders get pretttty scary with all these drafts of everything in there! There is an easy way to keep track of all these changes AND not have them cluttering up your folders for your projects. This is the magic of GitHub and what's called "version control". Version control is a fancy way of saying "I want to keep track of what changes I made to my files and when so I can only keep the most recent version of something in my project folders but still have the ability to go back in time and retrieve something I deleted in the past." 
+
+GitHub can be a great collaboration tool if you're working with multiple coders on a project, but I think of it as a collaboration tool with my past self. I can make all my project folders talk to GitHub online, keep track of the changes I make to all my files while only keeping one copy of all of them, and then I can go back in time to retrieve things I deleted but want to get back. 
+
+There's a great tutorial on linking RStudio with GitHub at [HappyGitWithR](https://happygitwithr.com/) and I highly recommend setting up GitHub beside R early on!
+
