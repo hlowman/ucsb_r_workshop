@@ -4,9 +4,9 @@
 ### April 1 - 2
 ### 9:00am - 4:00pm (PST)
 
-## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado
+## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado, Tatum Katz, Caroline Owens
 
-## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens
+## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens, Georgia Titcomb
 
 ## General Information
 
