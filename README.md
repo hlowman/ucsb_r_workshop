@@ -25,7 +25,7 @@
 | 11:15am  | BREAK  |
 | 11:30am  | [Starting with data](https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html)  |
 | 12:30pm  | LUNCH BREAK  |
-| 1:30pm  | Hack-y Hour(s)  |
+| 1:30pm  | Hack-y Hour(s): Import your datasets  |
 | 4:00pm  | END  |
 
 ### Day 2
@@ -39,5 +39,5 @@
 | 11:30am  | [Visualizing data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html)  |
 | 12:30pm  | Post-workshop survey  |
 | 12:45pm  | LUNCH BREAK  |
-| 1:45pm  | Hack-y Hour(s)  |
+| 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
 | 4:00pm  | END  |
