@@ -151,12 +151,18 @@
 # New Directory > New Project. Here, you should specify a 
 # machine-readable name (no spaces or special symbols) for your
 # project. Today, we'll call our project "r_ecology_workshop".
+# Also, you want to be sure to save it somewhere memorable on
+# your computer. I would recommend making an R specific folder
+# on your desktop or somewhere else to keep all your scripts in 
+# one place.
 
 # By creating projects, you automatically create folders to keep
 # your scripts organized. VERY important for keeping future you
 # happy!
 
-# Alright, now let's create a new file to work in today. Navigate # to File > New File > R Script and title it "intro_to_R".
+# Alright, now let's create a new file to work in today. 
+# Navigate to File > New File > R Script and title it 
+# "intro_to_R".
 
 # You've just opened your first R script! YAY!
 
