@@ -80,9 +80,10 @@ If you do not already have Zoom downloaded on your computer, please make sure to
 
 ### Dowload/Update R and RStudio
 
-You will need a current version of R and RStudio for this workshop. You can find instructions for installing or updating these programs here.
+You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
+
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
 
 ### Download Participants Folder
 
-Please download the folder for this workshop here. Download it on your computer somewhere you normally work with files (e.g. Documents folder). We will be using this folder organization throughout the workshop. 
+Please download the folder of data and files for this workshop here. Download it on your computer somewhere you normally work with files (e.g. Documents folder). We will be using this folder organization throughout the workshop. 
