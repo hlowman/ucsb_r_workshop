@@ -8,9 +8,37 @@
 
 ## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens, Georgia Titcomb
 
+## Registration
+
+We are capping attendance for this workshop at 30 participants. 
+
+[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link).
+
 ## General Information
 
+**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data
 
+**Where**: This course will take place online via Zoom. The instructors will provide instructions and information on how to join this workshop.
+
+**When**: April 1 & 2
+
+**Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](). 
+
+**Accessibility**: We are dedicated to providing a positive and accessible learning environment for all learners. Please email the instructors prior to the workshop if you require any accomodations or if there is anything we can do to help make the workshop accessible to you. 
+
+**Contact**: You can email ana00@ucsb.edu or heili.lowman@gmail.com for more information.
+
+## Code of conduct
+
+We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). Any code of conduct violations can be reported to [] and will result in removal from the remainder of the workshop. 
+
+## Surveys
+
+Please be sure to complete these surveys before and after the workshop
+
+[Pre-workshop survey]()
+
+[Post-workshop survey]()
 
 ## Schedule
 
@@ -41,3 +69,14 @@
 | 12:45pm  | LUNCH BREAK  |
 | 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
 | 4:00pm  | END  |
+
+## Setup
+
+### Videoconferencing
+
+If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download) for installing Zoom. 
+
+### R and RStudio
+
+You will need a current version of R and RStudio for this workshop. You can find instructions for installing or updating these programs here.
+You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
