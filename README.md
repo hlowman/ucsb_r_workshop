@@ -12,6 +12,10 @@
 
 We are capping attendance for this workshop at 30 participants. 
 
+[link text](the link){:target="_blank"}
+
+< a href="https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link" target="_blank" rel=“noreferrer noopener”>The registration form is available here.< /a >
+
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link" target="_blank">The registration form is available here.</a>
 
 ## General Information
