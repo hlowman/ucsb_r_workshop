@@ -36,9 +36,9 @@ We will be abiding by a code of conduct for this workshop based on the code of [
 
 Please be sure to complete these surveys before and after the workshop
 
-[Pre-workshop survey]()
+[Pre-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSfA9eY583ScmqQsMBWYIGwnnkB_Km0hd4xDPn-_OOFngabE2w/viewform?usp=sf_link)
 
-[Post-workshop survey]()
+[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link)
 
 ## Schedule
 
