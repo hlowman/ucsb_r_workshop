@@ -22,7 +22,7 @@ We are capping attendance for this workshop at 30 participants.
 
 **When**: April 1 & 2
 
-**Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](). 
+**Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](#setup). 
 
 **Accessibility**: We are dedicated to providing a positive and accessible learning environment for all learners. Please email the instructors prior to the workshop if you require any accomodations or if there is anything we can do to help make the workshop accessible to you. 
 
