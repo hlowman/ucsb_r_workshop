@@ -12,7 +12,7 @@
 
 We are capping attendance for this workshop at 30 participants. 
 
-[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link).
+[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link){:target="_blank" rel="noopener"}.
 
 ## General Information
 
@@ -30,15 +30,15 @@ We are capping attendance for this workshop at 30 participants.
 
 ## Code of conduct
 
-We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). Any code of conduct violations can be reported to [] and will result in removal from the remainder of the workshop. 
+We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/){:target="_blank" rel="noopener"}. Any code of conduct violations can be reported to [] and will result in removal from the remainder of the workshop. 
 
 ## Surveys
 
 Please be sure to complete these surveys before and after the workshop
 
-[Pre-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSfA9eY583ScmqQsMBWYIGwnnkB_Km0hd4xDPn-_OOFngabE2w/viewform?usp=sf_link)
+[Pre-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSfA9eY583ScmqQsMBWYIGwnnkB_Km0hd4xDPn-_OOFngabE2w/viewform?usp=sf_link){:target="_blank" rel="noopener"}
 
-[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link)
+[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link){:target="_blank" rel="noopener"}
 
 ## Schedule
 
@@ -47,11 +47,11 @@ Please be sure to complete these surveys before and after the workshop
 | April 1  |  | 
 | ------------- | ------------- | 
 | Before Starting  | Pre-workshop survey  |
-| 9:00am (PST)  | [Before we start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html)  |
+| 9:00am (PST)  | [Before we start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html){:target="_blank" rel="noopener"}  |
 | 10:00am  | BREAK  |
-| 10:15am  | [Introduction to R](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html)  |
+| 10:15am  | [Introduction to R](https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html){:target="_blank" rel="noopener"}  |
 | 11:15am  | BREAK  |
-| 11:30am  | [Starting with data](https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html)  |
+| 11:30am  | [Starting with data](https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html){:target="_blank" rel="noopener"}  |
 | 12:30pm  | LUNCH BREAK  |
 | 1:30pm  | Hack-y Hour(s): Import your datasets  |
 | 4:00pm  | END  |
@@ -62,9 +62,9 @@ Please be sure to complete these surveys before and after the workshop
 | ------------- | ------------- | 
 | 9:00am (PST)  | [Data workflows]()  |
 | 10:00am  | BREAK  |
-| 10:15am  | [Manipulating data](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)  |
+| 10:15am  | [Manipulating data](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html){:target="_blank" rel="noopener"}  |
 | 11:15am  | BREAK  |
-| 11:30am  | [Visualizing data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html)  |
+| 11:30am  | [Visualizing data](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html){:target="_blank" rel="noopener"}  |
 | 12:30pm  | Post-workshop survey  |
 | 12:45pm  | LUNCH BREAK  |
 | 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
@@ -76,11 +76,11 @@ Before the workshop, please make sure you have completed the following three set
 
 ### Download Videoconferencing Client
 
-If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download) for installing Zoom. 
+If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download){:target="_blank" rel="noopener"} for installing Zoom. 
 
 ### Dowload/Update R and RStudio
 
-You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
+You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio){:target="_blank" rel="noopener"}.
 
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
 
