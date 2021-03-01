@@ -30,7 +30,9 @@ We are capping attendance for this workshop at 30 participants.
 
 ## Code of conduct
 
-We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). [Any code of conduct violations can be reported here](https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform?usp=sf_link) and will result in removal of violators from the remainder of the workshop. 
+We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). 
+
+[Any code of conduct violations can be reported here](https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform?usp=sf_link) and will result in removal of violators from the remainder of the workshop. 
 
 ## Surveys
 
