@@ -12,7 +12,7 @@
 
 We are capping attendance for this workshop at 30 participants. 
 
-[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link){:target="_blank" rel="noopener"}.
+[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link){:target="_blank"}.
 
 ## General Information
 
