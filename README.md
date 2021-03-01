@@ -72,11 +72,17 @@ Please be sure to complete these surveys before and after the workshop
 
 ## Setup
 
-### Videoconferencing
+Before the workshop, please make sure you have completed the following three setup steps: 
+
+### Download Videoconferencing Client
 
 If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download) for installing Zoom. 
 
-### R and RStudio
+### Dowload/Update R and RStudio
 
 You will need a current version of R and RStudio for this workshop. You can find instructions for installing or updating these programs here.
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
+
+### Download Participants Folder
+
+Please download the folder for this workshop here. Download it on your computer somewhere you normally work with files (e.g. Documents folder). We will be using this folder organization throughout the workshop. 
