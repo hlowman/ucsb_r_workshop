@@ -26,7 +26,7 @@ We are capping attendance for this workshop at 30 participants.
 
 **Accessibility**: We are dedicated to providing a positive and accessible learning environment for all learners. Please email the instructors prior to the workshop if you require any accomodations or if there is anything we can do to help make the workshop accessible to you. 
 
-**Contact**: You can email ana00@ucsb.edu or heili.lowman@gmail.com for more information.
+**Contact**: You can email ana00@ucsb.edu or hlowman@unr.edu for more information.
 
 ## Code of conduct
 
@@ -78,7 +78,7 @@ Before the workshop, please make sure you have completed the following three set
 
 If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download) for installing Zoom. 
 
-### Dowload/Update R and RStudio
+### Download/Update R and RStudio
 
 You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
 
