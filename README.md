@@ -16,11 +16,11 @@ We are capping attendance for this workshop at 30 participants.
 
 ## General Information
 
-**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data
+**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data.
 
 **Where**: This course will take place online via Zoom. The instructors will provide instructions and information on how to join this workshop.
 
-**When**: April 1 & 2
+**When**: April 1 & 2, active instruction from 9-noon PST each day with afternoons reserved for participant 'hack-y' hours
 
 **Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](#setup). 
 
@@ -30,7 +30,9 @@ We are capping attendance for this workshop at 30 participants.
 
 ## Code of conduct
 
-We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). Any code of conduct violations can be reported to [] and will result in removal from the remainder of the workshop. 
+We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). 
+
+[Any code of conduct violations can be reported here](https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform?usp=sf_link) and will result in removal of violators from the remainder of the workshop. 
 
 ## Surveys
 
@@ -60,7 +62,7 @@ Please be sure to complete these surveys before and after the workshop
 
 | April 2  |  | 
 | ------------- | ------------- | 
-| 9:00am (PST)  | [Data workflows]()  |
+| 9:00am (PST)  | [Data workflows](https://hlowman.github.io/ucsb_r_workshop/module_creation/workflows/Workflow_organization.html)  |
 | 10:00am  | BREAK  |
 | 10:15am  | [Manipulating data](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)  |
 | 11:15am  | BREAK  |
@@ -72,7 +74,7 @@ Please be sure to complete these surveys before and after the workshop
 
 ## Setup
 
-Before the workshop, please make sure you have completed the following three setup steps: 
+Before the workshop, please make sure you have completed the following setup steps: 
 
 ### Download Videoconferencing Client
 
@@ -83,7 +85,3 @@ If you do not already have Zoom downloaded on your computer, please make sure to
 You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
 
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
-
-### Download Participants Folder
-
-Please download the folder of data and files for this workshop here. Download it on your computer somewhere you normally work with files (e.g. Documents folder). We will be using this folder organization throughout the workshop. 
