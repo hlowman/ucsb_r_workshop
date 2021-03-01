@@ -85,3 +85,9 @@ If you do not already have Zoom downloaded on your computer, please make sure to
 You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
 
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
+
+### (Optional) Your own dataset(s)
+
+Please bring one or more datasets you hope to incoroprate into your own research for the afternoon 'hack-y' hours. 
+
+The afternoon sessions for this workshop are intended for participants to practice importing and working with datasets from their own work. These are intended to be informal "hack-y" hours in which you will have access to instructors and helpers who can help you work with your own datasets! If you do not have your own dataset(s), you can still attend these sessions and spend the time working in the datasets used in the workshop or others you bring, we find online or in R, or which instructors or helpers may be willing to share from their own work. 
