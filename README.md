@@ -6,7 +6,7 @@
 
 ## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado, Tatum Katz, Caroline Owens
 
-## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens, Georgia Titcomb
+## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens, Georgia Titcomb, Zoe Zilz
 
 ## Registration
 
