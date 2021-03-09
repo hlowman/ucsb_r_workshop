@@ -20,7 +20,7 @@ We are capping attendance for this workshop at 30 participants.
 
 **Where**: This course will take place online via Zoom. The instructors will provide instructions and information on how to join this workshop.
 
-**When**: April 1 & 2, active instruction from 9-noon PST each day with afternoons reserved for participant 'hack-y' hours
+**When**: April 1 & 2, active instruction from 9-noon PST each day with afternoons reserved for participant 'hack-y' hours. *Note: The afternoon sessions are free-form to accomodate scheduling flexibility for participants to opt-in or out of all or part of both afternoon sessions.*
 
 **Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](#setup). 
 
