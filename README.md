@@ -6,7 +6,7 @@
 
 ## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado, Tatum Katz, Caroline Owens
 
-## Helpers: Austen Apigo, An Bui, Bart DiFiore, Elizabeth Forbes, Tatum Katz, Maggie Klope, Caroline Owens, Georgia Titcomb, Zoe Zilz
+## Helpers: Austen Apigo, An Bui, Bart DiFiore, Elizabeth Forbes, Tatum Katz, Maggie Klope, Caroline Owens, Gabe Runte, Georgia Titcomb, Zoe Zilz
 
 ## Registration
 
@@ -16,7 +16,7 @@ We are capping attendance for this workshop at 30 participants.
 
 ## General Information
 
-**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data.
+**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data. You do not have to be affiliated with UCSB to attend this workshop!
 
 **Where**: This course will take place online via Zoom. The instructors will provide instructions and information on how to join this workshop.
 
