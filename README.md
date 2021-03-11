@@ -12,9 +12,7 @@ Please note, if your country observes Daylight Savings Hours, take care to check
 
 ## Registration
 
-We are capping attendance for this workshop at 30 participants. 
-
-[The registration form is available here.](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link)
+Registration is closed at this time. If you were unable to sign up to participate but would still like to access the material, please bookmark this website - we will be posting all recordings of the workshop here for public use after the workshop has taken place.
 
 ## General Information
 
