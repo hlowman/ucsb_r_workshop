@@ -2,7 +2,9 @@
 
 ### Online
 ### April 1 - 2
-### 9:00am - 4:00pm (PST)
+### 9:00am - 4:00pm (Los Angeles, PST) / 5:00pm - 12:00am (London, GMT) / 10:30pm - 5:30am (New Delhi, IST)
+
+Please note, if your country observes Daylight Savings Hours, take care to check the course timing.
 
 ## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado, Tatum Katz, Caroline Owens
 
