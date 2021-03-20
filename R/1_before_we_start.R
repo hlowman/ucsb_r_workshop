@@ -5,6 +5,7 @@
 # The following script will walk through the "Before We Start"
 # main concepts, but no coding will take place during this section.
 
+# REMEMBER TO BEGIN RECORDING.
 
 # Welcome -----------------------------------------------------------------
 
@@ -17,25 +18,57 @@
 # Day 1: Welcome + Introduction to R/RStudio + Importing Data
 # Day 2: Workflows + Tidying Data + Visualizing Data
 
+# During this first "Welcome" lesson, I'm going to walk through the Zoom 
+# and RStudio programs with everyone so that you feel comfortable using 
+# them for the remaining lessons.
+
 # If you need assistance at any point, please type in the chat or
 # raise your hand, and one of the helpers will reach out to you.
+
+# Just to be certain everyone knows how to do this, please take a moment
+# and type what you had for your last meal in the chat.
+# Now, raise your hand.
 
 # At certain points during the lessons, we may ask you to confirm
 # that things are going smoothly or if you're encountering any
 # issues or need clarification. 
-# Ask everyone to practice using green check and red "x".
-# You can also click the little red "x" in Zoom if you're struggling
-# with something, and the helpers know to look for that symbol.
 
-# Installation - check to be sure everyone was able to download R
-# and RStudio. Instructions available here : https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio
+# If things are going well, we'll ask you to give us a "thumbs up".
+# Please take a moment and give us a "thumbs up".
+# If things are not going well, we'll ask you to give us a 
+# "surprised emoji".
+# Please take a moment and click the "surprised emoji".
+
+# So, just to clarify:
+# Raise your hand or type in the chat if you have a question.
+# Give us the thumbs up if you're doing alright.
+# Give us the surprised emoji is you're encountering problems.
+
+# Are there any questions about using Zoom during this workshop?
 
 #### PAUSE ####
 
+# Before we go further, I would also like to remind everyone of
+# our workshop code of conduct:
+# https://rladies.org/code-of-conduct/
+# If anyone would like to report a violation of this code of
+# conduct, they can do so here:
+# https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform
+
+#### PAUSE ####
+
+# Installation - check to be sure everyone was able to download R
+# and RStudio. Instructions available here : 
+# https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio
+
 # Anyone who was unable to download R and RStudio please let us
-# know and we will place you in a breakout room with a helper to
-# get you sorted out. Reassure them that they will not miss any
-# coding content while downloading.
+# know in the chat and we will place you in a breakout room with a 
+# helper to get you sorted out. You will not miss any coding content
+# while downloading.
+
+# SHARE SCREEN.
+
+# OPEN POWERPOINT.
 
 
 # Lesson Plan -------------------------------------------------------------
@@ -72,12 +105,18 @@
 # kinds of data sets - standard Excel files, shapefiles,
 # timeseries, etc.
 
+# CLOSE POWERPOINT.
+
 # Open R.
 
 # You should see a plain window, that looks like a text editor.
 # This is the R console that interprets what we type into the
 # computer and performs the resulting data analyses.
+
+# 4 + 4 (Hit Enter.)
+
 # However, this is not the most user-friendly interface.
+# Let us try RStudio instead.
 
 # Close R.
 
@@ -112,18 +151,20 @@
 
 # 4 + 4 (Hit Enter.)
 
+# You can see this works exactly as it did in R, but we have
+# lots more capabilities in RStudio.
+
 # Going counter-clockwise, the tabs in the next section allow you
 # to see the **Files** that are associated with your code, the
 # **Plots** you've created, the **Packages** that are installed,
 # **Help** documents when you get stuck, and view additional HTML
-# content you might create with the **Viewer** tab. Don't worry,
-# we'll go over each of these more in detail soon.
+# content you might create with the **Viewer** tab. We'll go over
+# each of these more in detail shortly.
 
 # The most important thing to be familiar with here is the
-# PACKAGES pane. R and RStudio come with some basic capabilities
-# (usually referred to as base R), but everything else nice and
-# fancy comes in a different package. In order to use what's in
-# the package, we'll need to "attach" it. 
+# PACKAGES pane. R and RStudio come with some basic capabilities,
+# but everything else nice and fancy comes in a different package.
+# In order to use what's in the package, we need to "attach" it.
 
 # Ana will go over this in the next lesson, but for now, you can
 # think of this packages tab as your library. You'll need to take
@@ -140,11 +181,17 @@
 # Type, `cat <- 4` in the Console and hit Enter - it should now
 # appear in your Environment. 
 
+# This can now be used in future code.
+# Type, `cat * 10` in the Console and hit Enter - what happens?
+
 # The remaining tabs - History, Connections, etc. - will not be as
 # important for today's lesson, so don't worry about them.
 
 # Finally, we have the **Source** pane. This is where you'll be
 # doing the majority of your coding during this workshop.
+
+# Now that we've walked through the different parts of RStudio,
+# let's get set up for today's lesson.
 
 # To stay organized, you always want to start each time in R with
 # a new PROJECT. To do so, navigate to File > New Project > 
@@ -160,9 +207,12 @@
 # your scripts organized. VERY important for keeping future you
 # happy!
 
-# Alright, now let's create a new file to work in today. 
+# Now, let's create a file to store IN that project.
 # Navigate to File > New File > R Script and title it 
 # "intro_to_R".
+
+# Your source pane should now open with the title "intro_to_R" along
+# the top of the pane.
 
 # You've just opened your first R script! YAY!
 
@@ -210,7 +260,7 @@
 # Once you've made your selection, scroll to the bottom of the
 # window and click "Apply".
 
-# Then, type the following in the Console:
+# Then, type the following in the Console, hitting Enter each time:
 
 # install.packages("tidyverse")
 # install.packages("here")
