@@ -57,7 +57,7 @@
 # links to how much of a headache it is to link your workflow to R. Having good file and 
 # folder organization is the first step - making sure it talks to R is the next step.
 
-# This is the beauty of the R Project. We created an R Project for you for this workshop
+# This is the beauty of the R Project. We created an R Project with you for this workshop
 # and have been having you use it to open and close RStudio. What is this thing even 
 # doing?
 
@@ -73,35 +73,7 @@
 getwd()
 
 # This will look different on every computer, but corresponds to where your working directory,
-# or where the R project on your computer is. What does working in R look like without this?
-
-# Let's close RStudio and delete the R Project to find out! Don't worry - we'll bring it
-# back!
-
-# Now let's reopen RStudio. Type in getwd()
-
-getwd()
-
-# Where are we now? Probably not where we were and in some dark hole of our computer where
-# it's going to be hard to get anywhere else without calling really long file paths
-
-# Ok, now that we made our lives harder, let's make them easier again be recreating our R
-# Project. 
-
-# In your current open version of RStudio, go to File -> New Project
-
-# Then, since we already have a nice file organization system for this project, let's find 
-# the folder it belongs to by clicking Existing Directory and finding that directory.
-
-# Then we can create an R Project and voila! We are now where we want to be and everything
-# is relational to where we put our R Project, our working directory.
-
-getwd()
-
-# We can then look back at our files on our computer and see that this R Project icon is 
-# back in our working directory, and we can open RStudio for this project by clicking on it 
-
-# Are there any questions here?# 
+# or where the R project on your computer is. 
 
 ## PAUSE##
 
