@@ -2,43 +2,45 @@
 
 ### Online
 ### April 1 - 2
-### 9:00am - 4:00pm (PST)
+### 9:00am - 4:00pm (Los Angeles, PDT) / 5:00pm - 12:00am (London, GMT) / 10:30pm - 5:30am (New Delhi, IST)
+
+Please note, if your country observes Daylight Savings Hours, take care to check the course timing.
 
 ## Instructors: Heili Lowman, Ana Miller-ter Kuile, Samantha Sambado, Tatum Katz, Caroline Owens
 
-## Helpers: Austen Apigo, An Bui, Tatum Katz, Caroline Owens, Georgia Titcomb
+## Helpers: Austen Apigo, An Bui, Bart DiFiore, Elizabeth Forbes, Tatum Katz, Maggie Klope, Caroline Owens, Gabe Runte, Georgia Titcomb, Zoe Zilz
 
 ## Registration
 
-We are capping attendance for this workshop at 30 participants. 
-
-[The registration form is available here](https://docs.google.com/forms/d/e/1FAIpQLSeDTRgG0lWnEXIL4cs5vIvptDx4UdzZe129GtT_99P0iSZ68g/viewform?usp=sf_link).
+Registration is closed at this time. If you were unable to sign up to participate but would still like to access the material, please bookmark this website - we will be posting all recordings of the workshop here for public use after the workshop has taken place.
 
 ## General Information
 
-**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data
+**Who**: This course is aimed at graduate and undergraduate students and researchers who work with ecological data. You do not have to be affiliated with UCSB to attend this workshop!
 
 **Where**: This course will take place online via Zoom. The instructors will provide instructions and information on how to join this workshop.
 
-**When**: April 1 & 2
+**When**: April 1 & 2, active instruction from 9-noon PST each day with afternoons reserved for participant 'hack-y' hours. *Note: The afternoon sessions are free-form to accomodate scheduling flexibility for participants to opt-in or out of all or part of both afternoon sessions.*
 
 **Requirements**: Participants must have access to a computer with a Mac, Linux, or Windows operating system. In addition, please install the specific software packages listed [below](#setup). 
 
 **Accessibility**: We are dedicated to providing a positive and accessible learning environment for all learners. Please email the instructors prior to the workshop if you require any accomodations or if there is anything we can do to help make the workshop accessible to you. 
 
-**Contact**: You can email ana00@ucsb.edu or heili.lowman@gmail.com for more information.
+**Contact**: You can email ana00@ucsb.edu or hlowman@unr.edu for more information.
 
 ## Code of conduct
 
-We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). Any code of conduct violations can be reported to [] and will result in removal from the remainder of the workshop. 
+We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). 
+
+[Any code of conduct violations can be reported here](https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform?usp=sf_link) and will result in removal of violators from the remainder of the workshop. 
 
 ## Surveys
 
 Please be sure to complete these surveys before and after the workshop
 
-[Pre-workshop survey]()
+[Pre-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSfA9eY583ScmqQsMBWYIGwnnkB_Km0hd4xDPn-_OOFngabE2w/viewform?usp=sf_link)
 
-[Post-workshop survey]()
+[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link)
 
 ## Schedule
 
@@ -60,7 +62,7 @@ Please be sure to complete these surveys before and after the workshop
 
 | April 2  |  | 
 | ------------- | ------------- | 
-| 9:00am (PST)  | [Data workflows]()  |
+| 9:00am (PST)  | [Data workflows](https://hlowman.github.io/ucsb_r_workshop/module_creation/workflows/Workflow_organization.html)  |
 | 10:00am  | BREAK  |
 | 10:15am  | [Manipulating data](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)  |
 | 11:15am  | BREAK  |
@@ -72,18 +74,20 @@ Please be sure to complete these surveys before and after the workshop
 
 ## Setup
 
-Before the workshop, please make sure you have completed the following three setup steps: 
+Before the workshop, please make sure you have completed the following setup steps: 
 
 ### Download Videoconferencing Client
 
 If you do not already have Zoom downloaded on your computer, please make sure to do so before the workshop. [Instructions can be found here](https://zoom.us/download) for installing Zoom. 
 
-### Dowload/Update R and RStudio
+### Download/Update R and RStudio
 
 You will need a current version of R and RStudio for this workshop. You can find [instructions for installing or updating these programs here](https://datacarpentry.org/R-ecology-lesson/index.html#Install_R_and_RStudio).
 
 You are only required to follow the instructions under the **Install R and RStudio** or **Update R and RStudio** sections. 
 
-### Download Participants Folder
+### (Optional) Your own dataset(s)
 
-Please download the folder of data and files for this workshop here. Download it on your computer somewhere you normally work with files (e.g. Documents folder). We will be using this folder organization throughout the workshop. 
+Please bring one or more datasets you hope to incoroprate into your own research for the afternoon 'hack-y' hours. 
+
+The afternoon sessions for this workshop are intended for participants to practice importing and working with datasets from their own work. These are intended to be informal "hack-y" hours in which you will have access to instructors and helpers who can help you work with your own datasets! If you do not have your own dataset(s), you can still attend these sessions and spend the time working in the datasets used in the workshop or others you bring, we find online or in R, or which instructors or helpers may be willing to share from their own work. 
