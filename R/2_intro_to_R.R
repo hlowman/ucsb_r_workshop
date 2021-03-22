@@ -131,20 +131,12 @@ weight_kg <- 100
 # RStudio using R scripts, which are files on your computer, like a word document or excel
 # file that can be opened and edited in RStudio at a different date. 
 
-# Let's open a script, which you can do in several ways, including the white + sign
-# document in the top left of the screen, 
-# from the File Dropdown menu (File -> New File -> R Script)
-# or from another keyboard shortcut
-# Ctrl + Shift + N
-# Ctrl + Shift + N
+# Let's open the script you started with Heili last section and reorient ourselves 
+# to what it is. 
 
 # This opens up a new window in R Studio that lives directly above your console on the upper
 # left. Now, any code you write in this script can be saved, re-opened, and re-run in R
 # as many times as you want.
-
-# It's a good idea to save a script right away with a good descriptive name. 
-# Let's save this script in the R folder in your folder downloaded for the workshop and 
-# title it 'intro_to_R'. 
 
 # Let's type our weight_kg object into this R script and run it
 
