@@ -75,6 +75,20 @@ getwd()
 # This will look different on every computer, but corresponds to where your working directory,
 # or where the R project on your computer is. 
 
+# Open R Studio environment that doesn't have a project associated
+
+# I have an R Studio environment open here that doesn't have an R Project just to show you
+# the beauty of this project. If I type getwd() into this window, 
+
+getwd()
+
+# I get my base directory,
+# which means to get to where my files and folders are I would have to use extra functions
+# to get there or I would have to specfiy really long file paths every time I wanted to get 
+# to somewhere with my data and code. 
+
+# Needless to say, R Projects are really really useful for helping you stay organized
+
 ## PAUSE##
 
 # A couple last things I will point out about the R Project capability in R studio.
