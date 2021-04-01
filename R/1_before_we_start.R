@@ -10,6 +10,7 @@
 # Welcome -----------------------------------------------------------------
 
 # Introductions - Heili, Ana, helpers
+# Name, field of study, and favorite recent meal - falafel sandwich
 
 # Schedule: mornings will be split into 3 hour-long lessons, with
 # 15 minute breaks in between each one, and with a "hacky hour"
@@ -17,6 +18,8 @@
 
 # Day 1: Welcome + Introduction to R/RStudio + Importing Data
 # Day 2: Workflows + Tidying Data + Visualizing Data
+
+# Want to take the next 15-20 minutes to be sure everyone is comfortable with using the virtual setup and knows how to get help and support.
 
 # During this first "Welcome" lesson, I'm going to walk through the Zoom 
 # and RStudio programs with everyone so that you feel comfortable using 
@@ -26,8 +29,13 @@
 # raise your hand, and one of the helpers will reach out to you.
 
 # Just to be certain everyone knows how to do this, please take a moment
-# and type what you had for your last meal in the chat.
+# and type YOUR FAVORITE MEAL in the chat.
+
+# PAUSE
+
 # Now, raise your hand.
+
+# PAUSE
 
 # At certain points during the lessons, we may ask you to confirm
 # that things are going smoothly or if you're encountering any
@@ -35,18 +43,20 @@
 
 # If things are going well, we'll ask you to give us a "thumbs up".
 # Please take a moment and give us a "thumbs up".
-# If things are not going well, we'll ask you to give us a 
-# "surprised emoji".
-# Please take a moment and click the "surprised emoji".
+
+# If things are not going well, we'll ask you to "raise your hand".
 
 # So, just to clarify:
 # Raise your hand or type in the chat if you have a question.
 # Give us the thumbs up if you're doing alright.
-# Give us the surprised emoji is you're encountering problems.
 
 # Are there any questions about using Zoom during this workshop?
 
 #### PAUSE ####
+
+# You are more than welcome to leave your cameras on.
+# But we ask that everyone mute themselves unless they've been
+# called on to speak by the instructor.
 
 # Before we go further, I would also like to remind everyone of
 # our workshop code of conduct:
@@ -70,6 +80,7 @@
 
 # OPEN POWERPOINT.
 
+# GO THROUGH SLIDES.
 
 # Lesson Plan -------------------------------------------------------------
 
@@ -161,6 +172,8 @@
 # content you might create with the **Viewer** tab. We'll go over
 # each of these more in detail shortly.
 
+# TYPE "mean" in HELP TAB.
+
 # The most important thing to be familiar with here is the
 # PACKAGES pane. R and RStudio come with some basic capabilities,
 # but everything else nice and fancy comes in a different package.
@@ -172,6 +185,9 @@
 # they'll always be there for you to access. To "read" one of the
 # packages, you simply need to click the checkbox next to a
 # package to attach it. Then, you're good to go!
+
+# You can also type the library() command in the console,
+# and it will attach a package.
 
 # Continuing counter-clockwise, you will find the **Environment**
 # pane. This is where all of your datasets and variables will be
@@ -216,6 +232,11 @@
 
 # You've just opened your first R script! YAY!
 
+# PAUSE
+
+# If anyone is having trouble creating this file,
+# please let one of the helpers know.
+
 # This is where we will be working for the remainder of the
 # workshop. If you were to do all your work in the Console, it
 # would be like sending RStudio a bunch of text messages - they're
@@ -252,6 +273,7 @@
 # reads as "Never".
 # This makes sure you start with a blank slate each time you open
 # up your RStudio.
+# Click "Apply".
 
 # Next, navigate to the Appearance tab, and here you can customize
 # the appearance and colors of your code.
@@ -269,7 +291,7 @@
 # If you got an error, please reach out to one of the instructors
 # and helpers for help.
 
-# If you didn't, you may head out for your break. We'll see you in
-# 15 minutes!
+# If you didn't, please give us a thumbs up emoji, and you may head out 
+# for your break. We'll see you in 15 minutes!
 
 # End of script.
