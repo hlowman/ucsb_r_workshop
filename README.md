@@ -72,6 +72,14 @@ Please be sure to complete these surveys before and after the workshop
 | 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
 | 4:00pm  | END  |
 
+## Scripts from Live Coding
+
+[Day 1, Session 2: Introduction to R](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess2_intro_to_r.R)
+
+[Day 1, Session 3: Starting with Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess3_starting_with_data.R)
+
+[Day 1, Hack-y Hour: Fun with Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_hacky_hour_1.R)
+
 ## Setup
 
 Before the workshop, please make sure you have completed the following setup steps: 
