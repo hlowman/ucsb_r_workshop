@@ -90,4 +90,42 @@ You are only required to follow the instructions under the **Install R and RStud
 
 Please bring one or more datasets you hope to incoroprate into your own research for the afternoon 'hack-y' hours. 
 
-The afternoon sessions for this workshop are intended for participants to practice importing and working with datasets from their own work. These are intended to be informal "hack-y" hours in which you will have access to instructors and helpers who can help you work with your own datasets! If you do not have your own dataset(s), you can still attend these sessions and spend the time working in the datasets used in the workshop or others you bring, we find online or in R, or which instructors or helpers may be willing to share from their own work. 
+The afternoon sessions for this workshop are intended for participants to practice importing and working with datasets from their own work. These are intended to be informal "hack-y" hours in which you will have access to instructors and helpers who can help you work with your own datasets! If you do not have your own dataset(s), you can still attend these sessions and spend the time working in the datasets used in the workshop or others you bring, we find online or in R, or which instructors or helpers may be willing to share from their own work.
+
+## Learn More
+
+### At UCSB and in Santa Barbara
+
+[UCSB Library Collaboratory Workshops](https://www.library.ucsb.edu/software-carpentry)
+
+[R Ladies Santa Barbara](https://www.meetup.com/rladies-santa-barbara/)
+
+[EcoDataScience](https://eco-data-science.github.io/) (both local and virtual communities and opportunities)
+
+### Beyond UCSB
+
+[R Ladies Global](https://rladies.org/)
+
+[Allison Horst's Courses and Workshops](https://allisonhorst.github.io/) on data management, analysis, and visualization
+
+[Data Carpentries lessons](https://datacarpentry.org/lessons/)
+
+[Software Carpentries lessons](https://software-carpentry.org/lessons/)
+
+[Carpentries Community Lessons](https://carpentries.org/community-lessons/)
+
+[R-DAVIS](https://gge-ucd.github.io/R-DAVIS/)
+
+[R 4 Data Science (Hadley Wickham/Garret Grolemund)](https://r4ds.had.co.nz/)
+
+### Other R-based Resources
+
+[Happy Git with R](https://happygitwithr.com/) for collaborating with others and future you
+
+[Stat 545 (Jenny Bryan)](https://stat545.com/)
+
+[RMarkdown the Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+[Mastering Shiny](https://mastering-shiny.org/)
+
+
