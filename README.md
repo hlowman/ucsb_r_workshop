@@ -72,6 +72,14 @@ Please be sure to complete these surveys before and after the workshop
 | 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
 | 4:00pm  | END  |
 
+## Scripts from Live Coding
+
+[Day 1, Session 2: Introduction to R](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess2_intro_to_r.R)
+
+[Day 1, Session 3: Starting with Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess3_starting_with_data.R)
+
+[Day 1, Hack-y Hour: Fun with Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_hacky_hour_1.R)
+
 ## Setup
 
 Before the workshop, please make sure you have completed the following setup steps: 
@@ -118,14 +126,23 @@ The afternoon sessions for this workshop are intended for participants to practi
 
 [R 4 Data Science (Hadley Wickham/Garret Grolemund)](https://r4ds.had.co.nz/)
 
-### Other R-based Resources
+[CU Boulder EarthLab Course Notes](https://www.earthdatascience.org/courses/)
+
+### Other R-based Tools
 
 [Happy Git with R](https://happygitwithr.com/) for collaborating with others and future you
-
-[Stat 545 (Jenny Bryan)](https://stat545.com/)
 
 [RMarkdown the Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
 [Mastering Shiny](https://mastering-shiny.org/)
 
+### Ecological Statistics in R
+
+[Stat 545 (Jenny Bryan)](https://stat545.com/)
+
+[Allison Horst's Courses and Workshops](https://allisonhorst.github.io/) on data management, analysis, and visualization
+
+[Kyle Edwards' Advanced Statistics Course Notes](https://sites.google.com/site/kyleedwardsresearch/lecture-notes?authuser=0)
+
+[Fukami Lab Statistics Course Notes](https://fukamilab.github.io/BIO202/index.html)
 
