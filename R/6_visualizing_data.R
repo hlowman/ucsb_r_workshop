@@ -13,6 +13,28 @@
 # - to learn how to customize plot layout in patchwork
 
 
+# The Big Picture -----------------------------------------------------------
+
+# 1. Data visualization is meant to convey a story. 
+# There are many ways to tell a story, but there are some general guidelines on how to build that story
+  ## What is your outcome of interest - your **dependent** variable 'y'? That outcome should be placed on the y-axis
+  ## What is influencing your outcome of interest - your **independent** variable 'x'? That should be placed on the x-axis
+  
+# 2. Your type of data determines how you shape your data 
+        # a) Numeric: numbers
+        # b) Categorical: words
+        # c) Continuous: numbers can take on **any** value
+        # d) Discrete: numbers or words can only be **certain** values
+  ## Plotting basics
+    # If you're only plotting 1 numeric variable --> histogram (ggplot geom: geom_histogram)
+    # If y and x are **both** numeric --> scatterplot (ggplot geom: geom_point)
+    # If y is numeric, and x is categorical --> boxplot (ggplot geom: geom_boxplot)
+
+# 3. Data visualization is the **first** AND **last** step of statistical analysis
+  # Be prepared to make a lot of changes along the way & have fun with it!
+  # Figures will never be 100% perfect in the creator's eyes, 
+    # but if it tells your story in a clear and effective way, then that is a job well done.
+
 # Basic Scatterplot -------------------------------------------------------
 
 # Load necessary packages.
@@ -37,6 +59,11 @@ str(penguins_raw)
 # (3) aes() = control your variables and aesthetics (color, shape, etc.)
 
 # Let's create a basic scatterplot using our palmer penguins dataset so that we can see these parts in action.
+
+ggplot(penguins_raw) # nothing works, you just gave it a lot of data
+ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) # we have labels, but no shapes
+ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm))+
+  geom_point() # now we got all the bits, let's make it groovy
 
 # I recommend saving your plots (exactly as you would save a variable) so that you can call it quickly.
 
@@ -86,6 +113,10 @@ dot_plot_fancy <- ggplot(penguins_raw,
        title = "Penguin Body Metrics",
        color = "Species") + # adds appropriate labels
   theme_classic() # removes gray background
+
+# compare basic to final graph - a big difference even with the same data!
+dot_plot
+dot_plot_fancy
 
 # You can easily go down the rabbit hole with color schemes, so for folks who are interested, we will provide you with resources at the close of today to access other color palettes.
 
@@ -145,7 +176,6 @@ bar_plot <- ggplot(penguins_raw, # specify dataset
 # R also provides handy ways of combining plots of unique data (separate from facetting).
 
 # Today, we'll demonstrate the patchwork() package, but we will also provide you with resources for additional packages.
-
 # You can use "+" or "|" to add plots into a single row and "/" to add additional rows.
 
 full_plot <- (dot_plot_fancy | box_plot) /
@@ -156,6 +186,25 @@ full_plot
 # And to export your plot, you can use the ggsave() function.
 
 ggsave("full_plot.pdf", full_plot, 
-       width = 8, height = 6, units = "in")
+       width = 8, height = 6, units = "in", dpi = 320)
 
+
+
+# Additional Resources ----------------------------------------------------
+
+# Color blindness simulator - make figures that are color blind friendly!  
+  ## https://www.color-blindness.com/coblis-color-blindness-simulator/
+  
+# R graph gallery - find what looks good to you and copy the code!
+  ## https://www.r-graph-gallery.com/
+
+# index of ggplot basics
+  ## https://ggplot2.tidyverse.org/reference/#section-aesthetics
+
+# Fundamentals of Data Visualization - if you want more practice
+  ## https://clauswilke.com/dataviz/
+
+
+ 
 # End of script.
+
