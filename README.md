@@ -80,6 +80,12 @@ Please be sure to complete these surveys before and after the workshop
 
 [Day 1, Hack-y Hour: Fun with Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_hacky_hour_1.R)
 
+[Day 2, Session 2: Manipulating Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_Sess2_manipulating_data.R)
+
+Day 2, Session 3: Visualizing Data
+
+[Day 2, Hack-y Hour: Plotting Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_hacky_hour_2.R)
+
 ## Setup
 
 Before the workshop, please make sure you have completed the following setup steps: 
@@ -129,6 +135,8 @@ The afternoon sessions for this workshop are intended for participants to practi
 [CU Boulder EarthLab Course Notes](https://www.earthdatascience.org/courses/)
 
 [More fun with FUNctions! by An Bui](https://an-bui.shinyapps.io/FUNctions-learnR/#section-about-and-credits)
+
+[Tidy Tuesday Workshop series by Heili Lowman](https://github.com/hlowman/TidyTuesday)
 
 ### Other R-based Tools
 
