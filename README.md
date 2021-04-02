@@ -128,6 +128,8 @@ The afternoon sessions for this workshop are intended for participants to practi
 
 [CU Boulder EarthLab Course Notes](https://www.earthdatascience.org/courses/)
 
+[More fun with FUNctions! by An Bui](https://an-bui.shinyapps.io/FUNctions-learnR/#section-about-and-credits)
+
 ### Other R-based Tools
 
 [Happy Git with R](https://happygitwithr.com/) for collaborating with others and future you
