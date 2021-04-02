@@ -126,14 +126,23 @@ The afternoon sessions for this workshop are intended for participants to practi
 
 [R 4 Data Science (Hadley Wickham/Garret Grolemund)](https://r4ds.had.co.nz/)
 
-### Other R-based Resources
+[CU Boulder EarthLab Course Notes](https://www.earthdatascience.org/courses/)
+
+### Other R-based Tools
 
 [Happy Git with R](https://happygitwithr.com/) for collaborating with others and future you
-
-[Stat 545 (Jenny Bryan)](https://stat545.com/)
 
 [RMarkdown the Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
 [Mastering Shiny](https://mastering-shiny.org/)
 
+### Ecological Statistics in R
+
+[Stat 545 (Jenny Bryan)](https://stat545.com/)
+
+[Allison Horst's Courses and Workshops](https://allisonhorst.github.io/) on data management, analysis, and visualization
+
+[Kyle Edwards' Advanced Statistics Course Notes](https://sites.google.com/site/kyleedwardsresearch/lecture-notes?authuser=0)
+
+[Fukami Lab Statistics Course Notes](https://fukamilab.github.io/BIO202/index.html)
 
