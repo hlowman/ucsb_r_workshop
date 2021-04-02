@@ -2,16 +2,70 @@
 # Day 2, Module 1
 # Human-friendly workflows
 
-# Introduce new helpers – if you could be any emoji, what would you be?
-# Encourage folks to ask helpers for help one-on-one, or ask questions generally in the chat. Itching to help.
-#	Re-orient to morning session: active teaching, afternoon session: more practice and/or doing stuff with your own datasets
+# REMEMBER TO BEGIN RECORDING.
+
+# Welcome -----------------------------------------------------------------
+
+# Introductions - Heili, Ana, helpers
+# Name, field of study, and if you could be any Emoji, what would it be and why?
+
+# Schedule: morning will be split into 3 hour-long lessons, with
+# 15 minute breaks in between each one, and with a "hacky hour"
+# practice session every afternoon after lunch
+
+# Day 1: Welcome + Introduction to R/RStudio + Importing Data
+# Day 2: Workflows + Tidying Data + Visualizing Data
+
+# Want to take just a few minutes to be sure everyone is comfortable with using the virtual setup and knows how to get help and support.
+
+# If you need assistance at any point, please type in the chat or
+# raise your hand, and one of the helpers will reach out to you.
+
+# Just to be certain everyone knows how to do this, please take a moment
+# and type YOUR FAVORITE MEAL in the chat.
+
+# PAUSE
+
+# Now, raise your hand.
+
+# PAUSE
+
+# At certain points during the lessons, we may ask you to confirm
+# that things are going smoothly or if you're encountering any
+# issues or need clarification. 
+
+# If things are going well, we'll ask you to give us a "thumbs up".
+# Please take a moment and give us a "thumbs up".
+
+# If things are not going well, we'll ask you to "raise your hand".
+
+# So, just to clarify:
+# Raise your hand or type in the chat if you have a question.
+# Give us the thumbs up if you're doing alright.
+
+# Are there any questions about using Zoom during this workshop?
+
+#### PAUSE ####
+
+# You are more than welcome to leave your cameras on.
+# But we ask that everyone mute themselves unless they've been
+# called on to speak by the instructor.
+
+# Before we go further, I would also like to remind everyone of
+# our workshop code of conduct:
+# https://rladies.org/code-of-conduct/
+# If anyone would like to report a violation of this code of
+# conduct, they can do so here:
+# https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform
+
+# NAVIGATE TO WEBSITE ON SCREEN SHARE
+
 #	Reminder about the website for schedule, topics, and scripts from yesterday
 #	Adding videos to the website next week
 
 # Community:
 #	We can’t cover everything that R and RStudio have to offer in terms of data management, analysis, and 
 # visualization in two days, so we’ve put a few resources on the website that we have all found useful in the past. 
-
 
 # The following will walk through human-friendly workflows for data and code organization.
 # There is very little coding in this lesson. 
