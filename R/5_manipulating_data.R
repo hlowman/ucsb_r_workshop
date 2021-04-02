@@ -15,6 +15,10 @@
 
 # Functions for tidying datasets ------------------------------------------
 
+# Open new R file.
+
+# Save as manipulating_data.R.
+
 # Load necessary packages.
 library(tidyverse)
 library(palmerpenguins)

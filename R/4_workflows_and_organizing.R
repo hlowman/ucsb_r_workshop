@@ -2,6 +2,71 @@
 # Day 2, Module 1
 # Human-friendly workflows
 
+# REMEMBER TO BEGIN RECORDING.
+
+# Welcome -----------------------------------------------------------------
+
+# Introductions - Heili, Ana, helpers
+# Name, field of study, and if you could be any Emoji, what would it be and why?
+
+# Schedule: morning will be split into 3 hour-long lessons, with
+# 15 minute breaks in between each one, and with a "hacky hour"
+# practice session every afternoon after lunch
+
+# Day 1: Welcome + Introduction to R/RStudio + Importing Data
+# Day 2: Workflows + Tidying Data + Visualizing Data
+
+# Want to take just a few minutes to be sure everyone is comfortable with using the virtual setup and knows how to get help and support.
+
+# If you need assistance at any point, please type in the chat or
+# raise your hand, and one of the helpers will reach out to you.
+
+# Just to be certain everyone knows how to do this, please take a moment
+# and type YOUR FAVORITE MEAL in the chat.
+
+# PAUSE
+
+# Now, raise your hand.
+
+# PAUSE
+
+# At certain points during the lessons, we may ask you to confirm
+# that things are going smoothly or if you're encountering any
+# issues or need clarification. 
+
+# If things are going well, we'll ask you to give us a "thumbs up".
+# Please take a moment and give us a "thumbs up".
+
+# If things are not going well, we'll ask you to "raise your hand".
+
+# So, just to clarify:
+# Raise your hand or type in the chat if you have a question.
+# Give us the thumbs up if you're doing alright.
+
+# Are there any questions about using Zoom during this workshop?
+
+#### PAUSE ####
+
+# You are more than welcome to leave your cameras on.
+# But we ask that everyone mute themselves unless they've been
+# called on to speak by the instructor.
+
+# Before we go further, I would also like to remind everyone of
+# our workshop code of conduct:
+# https://rladies.org/code-of-conduct/
+# If anyone would like to report a violation of this code of
+# conduct, they can do so here:
+# https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform
+
+# NAVIGATE TO WEBSITE ON SCREEN SHARE
+
+#	Reminder about the website for schedule, topics, and scripts from yesterday
+#	Adding videos to the website next week
+
+# Community:
+#	We can’t cover everything that R and RStudio have to offer in terms of data management, analysis, and 
+# visualization in two days, so we’ve put a few resources on the website that we have all found useful in the past. 
+
 # The following will walk through human-friendly workflows for data and code organization.
 # There is very little coding in this lesson. 
 
@@ -18,24 +83,14 @@
 # - using R Projects to transfer this organziation to RStudio
 # - using the here() package for code that can be run anywhere by anyone
 
-# Folder organization -----------------------------------------------------
+# Folder organization and R Projects -----------------------------------------------------
 
-# Once you start working on several different projects (and maybe you already have started)
-# and maybe even with multiple collaborators on projects, having clear and 
-# consistent file and folder organization is going to save you so much time
-# and heartache.
+#Data and code organization and re-inforcing the R Project
+# Challenge: think about a project you will or are currently working on. 
+#Make a list of what types of files you might have for that project. 
+#Now, try to think of ways to put those into folders. Put the possible folder names into the chat. 
 
-# There is no prescriptive file and folder organization strategy and it will likely
-# depend on the project you're working on.
-
-# Let's take the example of the folder we had you download for this workshop. 
-# I'm going to open mine and you can follow along on your computer or just watch.
-
-# We started by creating a top folder (in R speak, this is your working directory)
-# with a name that corresponds to the project name, in this case "ucsb r workshop"
-# Then, we created subfolders inside this top folder (directory) corresponding to 
-# different aspects of our project, including a "raw data", "data", and "code" or "R" 
-# folder. We specified a raw data and data folder because it's always a good idea to 
+# We specified a raw data and data folder because it's always a good idea to 
 # keep a raw version of your data somewhere in perpetuity that you don't change 
 # by any downstream analysis or manipulation. We can go into the why of the ethics on
 # this, but yes, there are very noteworthy cases when data comes into question and 
@@ -46,48 +101,56 @@
 # such as a folder for paper drafts, or a 'notes' folder from meetings associated with
 # the project. 
 
-# Challenge ---------------------------------------------------------------
+# Create files and folders for them to make some file and folder organization for this project as I do it
 
-# Think about a project you are or will be working on - what folders might you include
-# in this project (enter in chat).
+# In that folder, or working directory, there will be an R project. 
+# ‘One R project per research project’. 
+#We are emphasizing the R project because it’s a way to save yourself a lot of time and hassle wondering
+#WHERE ARE MY DATA because it translates all the organization you’ve created in your computer folders to R. 
 
-# R Projects --------------------------------------------------------------
+#	What do I mean by that? If you have an R session open, close it. 
+#Now, open R Studio from your applciations. Where does R think you are (Project in right hand side says none). 
 
-# A big reason I want to spend time on file and folder organization is that it directly
-# links to how much of a headache it is to link your workflow to R. Having good file and 
-# folder organization is the first step - making sure it talks to R is the next step.
+# Type in the function in the console 
+
+getwd()
+
+#	Let’s try and re-load our data from yesterday now
+
+library(tidyverse)
+
+surveys <- read_csv(“data_raw/portal_data_joined.csv”)
+
+#Why didn’t it work?
+
+# Let’s fix this by navigating either to the corner and selecting an R project there, 
+#or navigating to the File → Open Menu. OR. Go ahead and close R Studio and I’ll show you a quicker way.
+
+# Navigate to your folder with your scripts. 
+#Now, you will see an object with the extension .RProj. 
+#Double clik on that and R Studio will open up within your R project right away. 
+
+#Let’s re-type 
+
+getwd() 
+
+#now where are we?
+
+#	Let’s try re-loading surveys again
+
+library(tidyverse)
+
+surveys <- read_csv(“data_raw/portal_data_joined.csv”)
+
+# Once you start working on several different projects (and maybe you already have started)
+# and maybe even with multiple collaborators on projects, having clear and 
+# consistent file and folder organization is going to save you so much time
+# and heartache.
+
+# There is no prescriptive file and folder organization strategy and it will likely
+# depend on the project you're working on.
 
 # This is the beauty of the R Project. We created an R Project with you for this workshop
-# and have been having you use it to open and close RStudio. What is this thing even 
-# doing?
-
-# An R Project is a special kind of RStudio add-on that tells RStudio where your project 
-#"lives" and where it should start looking for things when you start to work on a project 
-# which means - it tells your computer that whereever the R project is is your "working
-# directory" and all the files and data you import into R from a project live somewhere
-# inside that working directory in a subfolder.
-
-# So lets open R Studio with your R Project icon. Where are we living on your computer?
-# We can get this information by typing in the get working directory function
-
-getwd()
-
-# This will look different on every computer, but corresponds to where your working directory,
-# or where the R project on your computer is. 
-
-# Open R Studio environment that doesn't have a project associated
-
-# I have an R Studio environment open here that doesn't have an R Project just to show you
-# the beauty of this project. If I type getwd() into this window, 
-
-getwd()
-
-# I get my base directory,
-# which means to get to where my files and folders are I would have to use extra functions
-# to get there or I would have to specfiy really long file paths every time I wanted to get 
-# to somewhere with my data and code. 
-
-# Needless to say, R Projects are really really useful for helping you stay organized
 
 ## PAUSE##
 
