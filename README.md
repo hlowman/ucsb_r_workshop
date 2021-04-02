@@ -82,7 +82,7 @@ Please be sure to complete these surveys before and after the workshop
 
 [Day 2, Session 2: Manipulating Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_Sess2_manipulating_data.R)
 
-Day 2, Session 3: Visualizing Data
+[Day 2, Session 3: Visualizing Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_Sess3_visualizing_data.R)
 
 [Day 2, Hack-y Hour: Plotting Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_hacky_hour_2.R)
 
