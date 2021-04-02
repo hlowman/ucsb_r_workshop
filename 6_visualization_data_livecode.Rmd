@@ -1,0 +1,702 @@
+---
+title: "6_visualization_data_livecode"
+author: "sbsambado"
+date: "4/2/2021"
+output: html_document
+---
+
+# The Big Picture 
+
+## 1. Data visualization is meant to convey a story. 
+There are many ways to tell a story, but there are some general guidelines on how to build that story
+
+  + What is your outcome of interest - your **dependent** variable 'y'? 
+      + That outcome should be placed on the y-axis
+  
+  + What is influencing your outcome of interest - your **independent** variable 'x'? 
+    + That should be placed on the x-axis
+  
+## 2. Your type of data determines how you shape your data 
+        +  Numeric: numbers
+        
+        +  Categorical: words
+        
+        +  Continuous: numbers can take on **any** value
+        
+        +  Discrete: numbers or words can only be **certain** values
+
+## 3. Plotting basics
+    + If you're only plotting 1 numeric variable --> histogram (ggplot geom: geom_histogram)
+    
+    + If y and x are **both** numeric --> scatterplot (ggplot geom: geom_point)
+    
+    + If y is numeric, and x is categorical --> boxplot (ggplot geom: geom_boxplot)
+
+# 3. Data visualization is the **first** AND **last** step of statistical analysis
+
+  +  Be prepared to make a lot of changes along the way & have fun with it!
+  
+  + Figures will never be 100% perfect in the creator's eyes, but if it tells your story in a **clear and effective** way, then that is a job *well done*.
+
+Okay, end philosophical ramble. Let's get started.    
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# load necessary packages
+library(tidyverse) # make tidy data, always install this package
+library(palmerpenguins) # built in data set from Dr. Allison Horst
+library(patchwork) # arranges finalized graphs
+
+# load necessary data
+penguins_raw <- palmerpenguins::penguins
+
+# let's look at data
+
+View(penguins_raw)
+
+str(penguins_raw)
+
+```
+
+## Today, we will be using the ggplot2 package (bundled as part of the tidyverse) to create our figures.
+
+Ggplot figures typically consist of three main parts:
+
++ (1) ggplot() = builds the plot using your data
+
++ (2) geom_*() = tells R what kind of plot (bar, point, boxplot, etc.)
+
++ (3) aes() = control your variables and aesthetics (color, shape, etc.)
+
+Let's create a basic scatterplot using our palmer penguins dataset so that we can see these parts in action.
++ our outcome of interest is `flipper_length_mm` and our initial explanatory variable is `body_mass_g`
+```{r}
+
+(dot_plot <- ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point())
+
+```
+
+Let's spiff up the figure a bit so that it would be presentable as part of publication.
+```{r}
+# Let's change the point size.
+
+(dot_plot2 <- ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point(size = 3))
+
+# Or the point color.
+## Does anyone have any favorite colors?
+
+dot_plot4 <- ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point(aes(color = species))
+
+# Most often you'll want to change the point color according to another part of the dataset.
+
+dot_plot4 <- ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) +
+  geom_point(aes(color = species))
+
+
+# Now populate the rest of the plot (scale, labels, theme, etc.).
+  
+dot_plot5 <- ggplot(penguins_raw, aes(x = body_mass_g, y = flipper_length_mm)) + # this is the data we want to plot
+  geom_point(aes(color = species)) + # shape of the data are points, and we want to color them by species type
+  scale_color_manual(values = c("darkorange", "purple", "cyan4")) + # we're giving species type a specific color
+  labs(x = "Body Mass (g)", # labels to x axis
+       y = "Flipper Length (mm)", # labels to y axis
+       title = "Penguins Body Metrics", # main title label
+       color = "Species") + # legend/color label
+  theme_classic() # change the background color of our plot
+  
+  
+```
+
+
+Compare basic to final graph - a big visual difference even with the same data!
+```{r}
+# first graph
+dot_plot
+# final graph
+
+dot_plot5
+```
+
+Challenge : Create a new plot named "dot_plot_mine" that plots bill depth by bill length and colors by species. Make sure your axes are labeled appropriately.
+```{r}
+
+```
+
+# Additional Plot Types
+
+First, we'll create a box plot with a jittered scatterplot layered over top of it.
+
++ Notice, you can put multiple geometries on a single plot, but be sure to layer carefully - R will layer them in the order they are presented in your script.
+
+Bar Plot with FACETS
+
++ Facetting allows you to break up your figure by a grouping based on your dataset
+```{r}
+bar_plot <- ggplot(penguins_raw, aes(x = sex, fill = species))+ # set axes/color
+  geom_bar(position = "dodge")+ # plot type (bar plot)
+  scale_fill_manual(values = c("darkorange", "purple", "cyan4")) + # choose colors
+  labs(x = "Sex", # add labels
+       y = "Count")+
+  theme_bw()+
+  facet_wrap(facets = vars(island)) # add facets
+```
+
+# Customizing Plot Layout
+
+R also provides handy ways of combining plots of unique data (separate from facetting).
++ Today, we'll demonstrate the patchwork() package, but we will also provide you with resources for additional packages.
+
+```{r}
+# You can use "+" or "|" to add plots into a single row and "/" to add additional rows.
+
+full_plot <- (bar_plot | dot_plot5) /# we are using our 2 plots, separate them with |
+  dot_plot2 # / starts a plot on another line
+
+# And to export your plot, you can use the ggsave() function.
+
+ggsave("full_plot.pdf", full_plot, # give pdf name, supply plot you want printed
+       width = 8, height = 6,   # extra arguments for exported image
+       units = "in", 
+       dpi = 320) # resolution of image on your computer 
+```
+
+
+
+# Additional Resources 
+
++ Color blindness simulator - make figures that are color blind friendly!  
+  https://www.color-blindness.com/coblis-color-blindness-simulator/
+  
++ R graph gallery - find what looks good to you and copy the code!
+  https://www.r-graph-gallery.com/
+
++ index of ggplot basics
+  https://ggplot2.tidyverse.org/reference/#section-aesthetics
+
++ Fundamentals of Data Visualization - if you want more practice
+  https://clauswilke.com/dataviz/
+
+
+ 
+# More fun graph stuff, it's going to get crazy
+
+## ggplot2 tutorial for beautiful plotting in R by Cedric
+https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/
+
+```{r} 
+chic <- readr::read_csv("https://raw.githubusercontent.com/Z3tt/R-Tutorials/master/ggplot2/chicago-nmmaps.csv")
+tibble::glimpse(chic)
+head(chic, 10)
+```
+
+
+#### ggplot labels
+```{r}
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)")
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  xlab("Year") +
+  ylab("Temperature (°F)")
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = expression(paste("Temperature (", degree ~ F, ")"^"(Hey, why should we use metric units?!)")))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title.x = element_text(vjust = 0, size = 15),
+        axis.title.y = element_text(vjust = 2, size = 15))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title.x = element_text(margin = margin(t = 10), size = 15),
+        axis.title.y = element_text(margin = margin(r = 10), size = 15))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title = element_text(size = 15, color = "firebrick", 
+                                  face = "italic"))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title.x = element_text(color = "sienna", size = 15),
+        axis.title.y = element_text(color = "orangered", size = 15))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title = element_text(color = "sienna", size = 15),
+        axis.title.y = element_text(color = "orangered", size = 15))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.title = element_text(color = "sienna", size = 15, face = "bold"),
+        axis.title.y = element_text(face = "bold.italic"))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.text = element_text(color = "dodgerblue", size = 12),
+        axis.text.x = element_text(face = "italic"))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.text.x = element_text(angle = 50, vjust = 1, hjust = 1, size = 12))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = NULL, y = "")
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  ylim(c(0, 50))
+
+```
+
+
+#### ggplot legend
+```{r}
+ggplot(chic,
+       aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = "none")
+
+ggplot(chic,
+       aes(x = date, y = temp,
+           color = season, shape = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  guides(color = "none")
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.title = element_blank())
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  scale_color_discrete(name = NULL)
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  labs(color = NULL)
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = "top")
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)",
+       color = NULL) +
+  theme(legend.position = c(.15, .15),
+        legend.background = element_rect(fill = "transparent"))
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(legend.position = c(.5, .97),
+        legend.background = element_rect(fill = "transparent")) +
+  guides(color = guide_legend(direction = "horizontal"))
+
+```
+
+#### different colors for lines and points
+```{r}
+ggplot(chic, aes(x = date, y = o3)) +
+  geom_line(color = "gray") +
+  geom_point(color = "darkorange2") +
+  labs(x = "Year", y = "Ozone")
+
+ggplot(chic, aes(x = date, y = o3)) +
+  geom_line(aes(color = "line")) +
+  geom_point(aes(color = "points")) +
+  labs(x = "Year", y = "Ozone") +
+  scale_color_discrete("Type:")
+
+ggplot(chic, aes(x = date, y = o3)) +
+  geom_line(aes(color = "line")) +  
+  geom_point(aes(color = "points")) +
+  labs(x = "Year", y = "Ozone") +
+  scale_color_manual(name = NULL,
+                     guide = "legend",
+                     values = c("points" = "darkorange2",
+                                "line" = "gray")) +
+  guides(color = guide_legend(override.aes = list(linetype = c(1, 0),
+                                                  shape = c(NA, 16))))
+
+```
+
+#### gradient level coloration
+```{r}
+
+ggplot(chic,
+       aes(x = date, y = temp, color = temp)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Temperature (°F)")
+
+ggplot(chic,
+       aes(x = date, y = temp, color = temp)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Temperature (°F)") +
+  guides(color = guide_legend())
+
+ggplot(chic,
+       aes(x = date, y = temp, color = temp)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Temperature (°F)") +
+  guides(color = guide_bins())
+
+ggplot(chic,
+       aes(x = date, y = temp, color = temp)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Temperature (°F)") +
+  guides(color = guide_colorsteps())
+
+
+```
+
+#### change background color
+```{r}
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "#1D8565", size = 2) +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(panel.background = element_rect(fill = "#64D2AA",
+                                        color = "#64D2AA", size = 2))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "#1D8565", size = 2) +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(panel.border = element_rect(fill = "#64D2AA99",
+                                    color = "#64D2AA", size = 2))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(plot.background = element_rect(fill = "gray60",
+                                       color = "gray30", size = 2))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(panel.background = element_rect(fill = NA),
+        plot.background = element_rect(fill = "gray60",
+                                       color = "gray30", size = 2))
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)") +
+  theme(plot.background = element_rect(fill = "gray60"),
+        plot.margin = unit(c(1, 3, 1, 8), "cm"))
+
+
+```
+#### gradient scales
+```{r}
+ggplot(chic, aes(year)) +
+  geom_bar(aes(fill = season), color = "grey", size = 2) +
+  labs(x = "Year", y = "Observations", fill = "Season:")
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "steelblue", size = 2) +
+  labs(x = "Year", y = "Temperature (°F)")
+
+ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(shape = 21, size = 2, stroke = 1,
+             color = "#3cc08f", fill = "#c08f3c") +
+  labs(x = "Year", y = "Temperature (°F)")
+
+(ga <- ggplot(chic, aes(x = date, y = temp, color = season)) +
+    geom_point() +
+    labs(x = "Year", y = "Temperature (°F)", color = NULL))
+
+ga + scale_color_manual(values = c("dodgerblue4",
+                                   "darkolivegreen4",
+                                   "darkorchid3",
+                                   "goldenrod1"))
+
+ga + scale_color_brewer(palette = "Set1")
+
+library(ggthemes)
+ga + scale_color_tableau()
+
+library(ggsci)
+g1 <- ga + scale_color_aaas()
+g2 <- ga + scale_color_npg()
+
+library(patchwork)
+(g1 + g2) * theme(legend.position = "top")
+
+gb <- ggplot(chic, aes(x = date, y = temp, color = temp)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)", color = "Temperature (°F):")
+
+gb + scale_color_continuous()
+
+## gb + scale_color_gradient()
+
+mid <- mean(chic$temp)  ## midpoint
+
+gb + scale_color_gradient2(midpoint = mid)
+
+gb + scale_color_gradient(low = "darkkhaki",
+                          high = "darkgreen")
+
+gb + scale_color_gradient2(midpoint = mid, low = "#dd8a0b",
+                           mid = "grey92", high = "#32a676")
+
+p1 <- gb + scale_color_viridis_c() + ggtitle("'viridis' (default)")
+p2 <- gb + scale_color_viridis_c(option = "inferno") + ggtitle("'inferno'")
+p3 <- gb + scale_color_viridis_c(option = "plasma") + ggtitle("'plasma'")
+p4 <- gb + scale_color_viridis_c(option = "cividis") + ggtitle("'cividis'")
+
+library(patchwork)
+(p1 + p2 + p3 + p4) * theme(legend.position = "bottom")
+
+ga + scale_color_viridis_d(guide = "none")
+
+library(rcartocolor)
+g1 <- gb + scale_color_carto_c(palette = "BurgYl")
+g2 <- gb + scale_color_carto_c(palette = "Earth")
+
+(g1 + g2) * theme(legend.position = "bottom")
+
+library(scico)
+g1 <- gb + scale_color_scico(palette = "berlin")
+g2 <- gb + scale_color_scico(palette = "hawaii", direction = -1)
+
+(g1 + g2) * theme(legend.position = "bottom")
+
+
+```
+#### theme stuff
+```{r}
+library(ggdark)
+
+ggplot(chic, aes(date, temp, color = temp)) +
+  geom_point(size = 5) +
+  geom_point(aes(color = temp,
+                 color = after_scale(invert_color(color))),
+             size = 2) +
+  scale_color_scico(palette = "hawaii", guide = "none") +
+  labs(x = "Year", y = "Temperature (°F)")
+
+library(colorspace)
+
+ggplot(chic, aes(date, temp)) +
+  geom_boxplot(aes(color = season,
+                   fill = after_scale(desaturate(lighten(color, .6), .6))),
+               size = 1) +
+  scale_color_brewer(palette = "Dark2", guide = "none") +
+  labs(x = "Year", y = "Temperature (°F)")
+
+
+
+library(ggthemes)
+
+ggplot(chic, aes(x = date, y = temp, color = season)) +
+  geom_point() +
+  labs(x = "Year", y = "Temperature (°F)") +
+  ggtitle("Ups and Downs of Chicago's Daily Temperatures") +
+  theme_economist() +
+  scale_color_economist(name = NULL)
+
+library(dplyr)
+chic_2000 <- filter(chic, year == 2000)
+
+ggplot(chic_2000, aes(x = temp, y = o3)) +
+  geom_point() +
+  labs(x = "Temperature (°F)", y = "Ozone") +
+  ggtitle("Temperature and Ozone Levels During the Year 2000 in Chicago") +
+  theme_tufte()
+
+library(hrbrthemes)
+
+ggplot(chic, aes(x = temp, y = o3)) +
+  geom_point(aes(color = dewpoint), show.legend = FALSE) +
+  labs(x = "Temperature (°F)", y = "Ozone") +
+  ggtitle("Temperature and Ozone Levels in Chicago")
+
+update_geom_defaults("point", list(colour = "black"))
+
+g <- ggplot(chic, aes(x = date, y = temp)) +
+  geom_point(color = "firebrick") +
+  labs(x = "Year", y = "Temperature (°F)",
+       title = "Temperatures in Chicago")
+
+#g + theme_bw(base_family = "Playfair")
+
+#g + theme_bw(base_size = 30, base_family = "Roboto Condensed")
+
+g + theme_bw(base_line_size = 1, base_rect_size = 1)
+
+theme_gray
+
+
+```
+
+# Okay less fun things, here are the more practical.
+labeling
+
+#### text labels
+```{r}
+df <- data.frame(x = 1, y = 3:1, family = c("sans", "serif", "mono"))
+ggplot(df, aes(x, y)) + 
+  geom_text(aes(label = family, family = family))
+```
+
+#### font face
+```{r}
+df <- data.frame(x = 1, y = 3:1, face = c("plain", "bold", "italic"))
+ggplot(df, aes(x, y)) + 
+  geom_text(aes(label = face, fontface = face))
+```
+
+#### alignment
++ hjust (“left”, “center”, “right”, “inward”, “outward”) 
++ vjust (“bottom”, “middle”, “top”, “inward”, “outward”) 
++ inward aligns text towards middle of plot to remain within plot limits
+```{r}
+df <- data.frame(
+  x = c(1, 1, 2, 2, 1.5),
+  y = c(1, 2, 1, 2, 1.5),
+  text = c(
+    "bottom-left", "bottom-right", 
+    "top-left", "top-right", "center"
+  )
+)
+ggplot(df, aes(x, y)) +
+  geom_text(aes(label = text))
+ggplot(df, aes(x, y)) +
+  geom_text(aes(label = text), vjust = "inward", hjust = "inward")
+```
+
+#### label existing point
++ nudge_x and nudge_y
+```{r}
+df <- data.frame(trt = c("a", "b", "c"), resp = c(1.2, 3.4, 2.5))
+ggplot(df, aes(resp, trt)) + 
+  geom_point() + 
+  geom_text(aes(label = paste0("(", resp, ")")), nudge_y = -0.25) + 
+  xlim(1, 3.6)
+```
+
+#### to prevent overlap labels
+```{r}
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_text(aes(label = model)) + 
+  xlim(1, 8)
+ggplot(mpg, aes(displ, hwy)) + 
+  geom_text(aes(label = model), check_overlap = TRUE) + 
+  xlim(1, 8)
+```
+
+#### add labels to busy backgrounds
+```{r}
+label <- data.frame(
+  waiting = c(55, 80), 
+  eruptions = c(2, 4.3), 
+  label = c("peak one", "peak two")
+)
+
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_tile(aes(fill = density)) + 
+  geom_label(data = label, aes(label = label))
+```
+
+### Custom annotations
++ geom_text() and geom_label() to add text, as illustrated earlier.
+
++ geom_rect() to highlight interesting rectangular regions of the plot. geom_rect() has aesthetics xmin, xmax, ymin and ymax.
+
++ geom_line(), geom_path() and geom_segment() to add lines. All these geoms have an arrow parameter, which allows you to place an arrowhead on the line. Create arrowheads with arrow(), which has arguments angle, length, ends and type.
+
++ geom_vline(), geom_hline() and geom_abline() allow you to add reference lines (sometimes called rules), that span the full range of the plot.
+```{r}
+ggplot(economics, aes(date, unemploy)) + 
+  geom_line()
+
+presidential <- subset(presidential, start > economics$date[1])
+
+ggplot(economics) + 
+  geom_rect(
+    aes(xmin = start, xmax = end, fill = party), 
+    ymin = -Inf, ymax = Inf, alpha = 0.2, 
+    data = presidential
+  ) + 
+  geom_vline(
+    aes(xintercept = as.numeric(start)), 
+    data = presidential,
+    colour = "grey50", alpha = 0.5
+  ) + 
+  geom_text(
+    aes(x = start, y = 2500, label = name), 
+    data = presidential, 
+    size = 3, vjust = 0, hjust = 0, nudge_x = 50
+  ) + 
+  geom_line(aes(date, unemploy)) + 
+  scale_fill_manual(values = c("blue", "red")) +
+  xlab("date") + 
+  ylab("unemployment")
+
+
+```
+
+
+#### To highlight certain points using annotate()
+```{r}
+p <- ggplot(mpg, aes(displ, hwy)) +
+  geom_point(
+    data = filter(mpg, manufacturer == "subaru"), 
+    colour = "orange",
+    size = 3
+  ) +
+  geom_point() 
+
+p + 
+  annotate(geom = "point", x = 5.5, y = 40, colour = "orange", size = 3) + 
+  annotate(geom = "point", x = 5.5, y = 40) + 
+  annotate(geom = "text", x = 5.6, y = 40, label = "subaru", hjust = "left")
+
+
+## OR
+
+p + 
+  annotate(
+    geom = "curve", x = 4, y = 35, xend = 2.65, yend = 27, 
+    curvature = .3, arrow = arrow(length = unit(2, "mm"))
+  ) +
+  annotate(geom = "text", x = 4.1, y = 35, label = "subaru", hjust = "left")
+```
+
+
+#### Display data from single group with complete data set in background
+```{r}
+ggplot(mpg, aes(displ, hwy, colour = factor(cyl))) +
+  geom_point() + 
+  gghighlight::gghighlight() + 
+  facet_wrap(vars(cyl))
+```
