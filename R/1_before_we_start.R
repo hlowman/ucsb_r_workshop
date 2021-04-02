@@ -5,6 +5,13 @@
 # The following script will walk through the "Before We Start"
 # main concepts, but no coding will take place during this section.
 
+# As we wait for folks to join, please take a moment to fill out the
+# pre-workshop survey if you haven't already.
+
+# GO SLOW.
+
+# TURN ON CLOSED CAPTIONING.
+
 # REMEMBER TO BEGIN RECORDING.
 
 # Welcome -----------------------------------------------------------------
@@ -293,5 +300,7 @@
 
 # If you didn't, please give us a thumbs up emoji, and you may head out 
 # for your break. We'll see you in 15 minutes!
+
+# REMEMBER TO STOP RECORDING.
 
 # End of script.
