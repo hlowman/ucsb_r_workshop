@@ -76,6 +76,20 @@ Post-workshop survey
 | 1:45pm  | Hack-y Hour(s): Manipulate and graph your data  |
 | 4:00pm  | END  |
 
+## Videos from Live Coding
+
+[Day 1, Session 1: Welcome & Setup](https://www.youtube.com/watch?v=BgC2nN_iJlE)
+
+[Day 1, Session 2: Introduction to R](https://www.youtube.com/watch?v=oj25kaLanXQ)
+
+[Day 1, Session 3: Starting with Data](https://www.youtube.com/watch?v=9sggmYfK_b8)
+
+[Day 2, Session 1: Workflows in R](https://www.youtube.com/watch?v=Iy-OPZVs4Mo)
+
+[Day 2, Session 2: Manipulating Data](https://www.youtube.com/watch?v=3zAHDFwG78A)
+
+[Day 2, Session 3: Visualizing Data](https://www.youtube.com/watch?v=-EdiJm7m4vg)
+
 ## Scripts from Live Coding
 
 [Day 1, Session 2: Introduction to R](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess2_intro_to_r.R)
