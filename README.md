@@ -44,7 +44,7 @@ Please be sure to complete these surveys before and after the workshop
 
 Pre-workshop survey
 
-Post-workshop survey
+[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link)
 
 ## Schedule
 
