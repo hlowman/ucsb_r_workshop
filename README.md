@@ -36,15 +36,15 @@ Registration is closed at this time. If you were unable to sign up to participat
 
 We will be abiding by a code of conduct for this workshop based on the code of [R-Ladies](https://rladies.org/code-of-conduct/). 
 
-[Any code of conduct violations can be reported here](https://docs.google.com/forms/d/e/1FAIpQLSfISSlxKKqRxVxdvdz-ytm4581IQcXw3CrZybR3xlowCOUcag/viewform?usp=sf_link) and will result in removal of violators from the remainder of the workshop. 
+Any code of conduct violations can be reported here and will result in removal of violators from the remainder of the workshop. 
 
 ## Surveys
 
 Please be sure to complete these surveys before and after the workshop
 
-[Pre-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSfA9eY583ScmqQsMBWYIGwnnkB_Km0hd4xDPn-_OOFngabE2w/viewform?usp=sf_link)
+Pre-workshop survey
 
-[Post-workshop survey](https://docs.google.com/forms/d/e/1FAIpQLSdk6nw4dWit0DpWYZXngNz4fuoUuRlNFq1sDV1cmhjkIJOtbQ/viewform?usp=sf_link)
+Post-workshop survey
 
 ## Schedule
 
