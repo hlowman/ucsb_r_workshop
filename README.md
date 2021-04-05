@@ -1,5 +1,9 @@
 # Introduction to R for Ecologists - UC Santa Barbara
 
+## Thank you!
+
+Thank you to everyone who attended our live workshop!! Below you will find the original schedule along with the live coding scripts and (coming soon) video recordings of each workshop session. 
+
 ### Online
 ### April 1 - 2
 ### 9:00am - 4:00pm (Los Angeles, PDT) / 5:00pm - 12:00am (London, GMT) / 10:30pm - 5:30am (New Delhi, IST)
@@ -79,6 +83,8 @@ Please be sure to complete these surveys before and after the workshop
 [Day 1, Session 3: Starting with Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_Sess3_starting_with_data.R)
 
 [Day 1, Hack-y Hour: Fun with Palmer Penguins Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day1_hacky_hour_1.R)
+
+[Day 1, Session 1: Workflows in R](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_Sess1_workflows_in_R.R)
 
 [Day 2, Session 2: Manipulating Data](https://github.com/hlowman/ucsb_r_workshop/blob/main/live_coding/Day2_Sess2_manipulating_data.R)
 
